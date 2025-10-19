@@ -1,0 +1,28 @@
+{
+  "name": "classificados-brasilia",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Plataforma web de classificados para acompanhantes em Brasília com assinaturas semanais via Stripe e rotina diária de verificação.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js"
+  },
+  "keywords": [
+    "classificados",
+    "acompanhantes",
+    "brasilia",
+    "stripe",
+    "assinaturas",
+    "cron"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "node-cron": "^3.0.3",
+    "stripe": "^14.25.0",
+    "uuid": "^9.0.1"
+  }
+}

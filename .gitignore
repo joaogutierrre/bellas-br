@@ -1,0 +1,24 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Env
+.env
+
+# Data
+/data/*.sqlite
+/data/*.db
+/data/*.db-journal
+/data/db.json
+
+# Logs
+logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
