@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const modelsRouter = require('./routes/models');
+const usersRouter = require('./routes/users');
 const { stripeWebhookHandler } = require('./routes/webhooks');
 const { scheduleDailyValidation } = require('./cron');
 
@@ -22,6 +23,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/api/models', modelsRouter);
+app.use('/api/users', usersRouter);
 
 // Fallback para 404
 app.use((req, res) => {
